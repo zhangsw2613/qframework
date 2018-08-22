@@ -17,8 +17,7 @@ class UserInfo extends Model
     {
         /**
          * 1、设置关联：
-         * 使用find自动获取关联表所有字段（例如：$result->comments()），
-         * 同时可进行链式操作，如：$result->comments()->delete()
+         * 使用find自动获取关联表所有字段（例如：$result->comments()）
          * 2、添加触发器，[insert,delete,update]自动触发执行相应函数
          */
         $this->relation(Model::HAS_ONE,'test2_info',__NAMESPACE__.'\\test2','fd');

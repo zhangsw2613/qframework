@@ -12,6 +12,9 @@ use qframework;
 
 class Controller extends Base
 {
+     /**
+     * @var qframework\view\View
+     */
     protected  $view = null;
 
     public function __construct()
